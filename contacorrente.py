@@ -31,6 +31,9 @@ class ContaCorrente:
             f"| Saldo: R${c.saldo},00"
         )
 
+    def relatorio(self, parametros: dict={}):
+        # TODO: Implementar relatório de movimentação bancária.
+        pass
 
 c = ContaCorrente(12345, "David")
 print(c)
@@ -40,3 +43,4 @@ c.depositar(3800)
 print(c)
 c.sacar(425)
 print(c)
+c.relatorio()
